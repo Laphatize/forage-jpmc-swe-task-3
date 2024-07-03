@@ -1,9 +1,13 @@
 import { ServerRespond } from './DataStreamer';
 
 export interface Row {
-  stock: string,
-  top_ask_price: number,
   timestamp: Date,
+  ratio: number,
+  upper_bound: number,
+  lower_bound: number,
+  trigger_alert: number | null,
+  price_abc: number,
+  price_def: number,
 }
 
 
